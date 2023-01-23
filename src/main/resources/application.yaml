@@ -1,0 +1,15 @@
+spring:
+  # Postgres Database
+  datasource:
+    url: jdbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: admin
+    driver-class-name: org.postgresql.Driver
+  # JPA
+  jpa:
+    hibernate:
+      ddl-auto: create # 자동으로 테이블 생성 (drop -> create)
+    properties:
+      hibernate:
+        format_sql: true
+
